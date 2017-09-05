@@ -2,11 +2,11 @@
 
 Desafio de desenvolvimento Acesso
 
-A equipe de marketing da Acesso precisa de uma ferramenta para acompanhar o engajamento da marca nas redes sociais "Facebook", "Google+", "Twitter" e "Instagram".
+A equipe de marketing da Acesso precisa de uma ferramenta para acompanhar o engajamento da marca na rede social "Twitter".
 
-Para atender essa necessidade o time de Desenvolvedores decididiu criar um lugar único para visualização dos posts referentes à hashtags nas redes sociais.
+Para atender essa necessidade o time de Desenvolvedores decididiu criar um lugar único para visualização dos posts referentes à hashtags nessa rede social.
 
-Sua missão, se aceitá-la, será criar uma integração com as mídias sociais, localizar os posts com os devidos termos (hashtags) e exibi-los na interface também criada por você.
+Sua missão, se aceitá-la, será criar uma integração com a mídia social, localizar os posts com os devidos termos (hashtags) e exibi-los na interface também criada por você.
 
 Para agilizar a busca da equipe de marketing, como requisito não funcional, foi definido que toda hashtag pesquisada deve ser armazenada e exibida em uma lista de últimas buscas.
 
