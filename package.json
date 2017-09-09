@@ -1,0 +1,19 @@
+{
+  "name": "marketing-twitter-integration",
+  "version": "1.0.0",
+  "description": "Ferramenta para acompanhar o engajamento da marca na rede social \"Twitter\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leolana/dev-challenge.git"
+  },
+  "author": "leolana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leolana/dev-challenge/issues"
+  },
+  "homepage": "https://github.com/leolana/dev-challenge#readme"
+}
