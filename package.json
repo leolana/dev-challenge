@@ -4,7 +4,8 @@
   "description": "Ferramenta para acompanhar o engajamento da marca na rede social \"Twitter\"",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "./node_modules/mocha/bin/mocha --recursive tests/",
+    "start": "NODE_ENV=local CACHE=true DEBUG=true node index.js"
   },
   "repository": {
     "type": "git",
