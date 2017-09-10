@@ -29,7 +29,8 @@
     "koa-cors": "0.0.16",
     "koa-cors-error": "0.0.2",
     "koa-mount": "^3.0.0",
-    "koa-router": "^7.2.1"
+    "koa-router": "^7.2.1",
+    "twitter": "^1.7.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
