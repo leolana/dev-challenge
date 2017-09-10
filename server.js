@@ -3,7 +3,7 @@ import bodyParser from 'koa-body';
 import cors from 'koa-cors';
 import corsError from 'koa-cors-error';
 import gzip from 'koa-compress';
-import postRouter from './src/routers/index';
+import postRouter from './src/api/routers/index';
 
 const server = new Koa();
 

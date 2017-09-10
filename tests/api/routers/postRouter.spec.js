@@ -2,7 +2,7 @@ import chai from 'chai';
 import chaiHttp from 'chai-http';
 import { describe, it, beforeEach } from 'mocha';
 
-import server from '../../server';
+import server from '../../../server';
 
 chai.use(chaiHttp);
 describe('API api/post', () => {
