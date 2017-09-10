@@ -20,4 +20,6 @@ server.use(gzip());
 
 postRouter(server);
 
-server.listen(3000);
+const serverListen = server.listen(3000);
+
+export default serverListen;
