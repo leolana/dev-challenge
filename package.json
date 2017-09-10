@@ -4,8 +4,13 @@
   "description": "Ferramenta para acompanhar o engajamento da marca na rede social \"Twitter\"",
   "main": "index.js",
   "scripts": {
+    "prebuild": "npm run clean:dist",
+    "build": "cross-env NODE_ENV=production babel -s true ./server.js -d dist",
+    "start": "npm run serve:dev ./server.js",
+    "serve:dev": "nodemon $2 --exec babel-node",
+    "serve:dist": "nodemon dist/index.js",
     "test": "./node_modules/mocha/bin/mocha --recursive tests/",
-    "start": "NODE_ENV=local CACHE=true DEBUG=true node index.js"
+    "clean:dist": "shx rm -rf dist"
   },
   "repository": {
     "type": "git",
@@ -18,9 +23,17 @@
   },
   "homepage": "https://github.com/leolana/dev-challenge#readme",
   "dependencies": {
-    "koa": "^2.3.0"
+    "koa": "^2.3.0",
+    "koa-body": "^2.3.0",
+    "koa-compress": "^2.0.0",
+    "koa-cors": "0.0.16",
+    "koa-cors-error": "0.0.2",
+    "koa-mount": "^3.0.0",
+    "koa-router": "^7.2.1"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
     "eslint": "^4.6.1",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-plugin-import": "^2.7.0",
