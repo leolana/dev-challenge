@@ -4,6 +4,10 @@ import cors from 'koa-cors';
 import corsError from 'koa-cors-error';
 import gzip from 'koa-compress';
 import postRouter from './src/api/routers/index';
+import staticCache from 'koa-static-cache';
+import register from 'babel-register';
+import react from 'koa-react-view';
+import path from 'path';
 
 const server = new Koa();
 
@@ -19,6 +23,23 @@ server.use(corsError);
 server.use(gzip());
 
 postRouter(server);
+
+const viewpath = path.join(__dirname, 'src/app/views');
+const assetspath = path.join(__dirname, 'src/app/public');
+
+react(server, { views: viewpath });
+
+server.use(staticCache(assetspath));
+
+server.use(function* () {
+  this.render('index', {
+    title: 'List',
+    list: [
+      'hello koa',
+      'hello react',
+    ],
+  });
+});
 
 const serverListen = server.listen(3000);
 
