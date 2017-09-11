@@ -5,7 +5,6 @@ import corsError from 'koa-cors-error';
 import gzip from 'koa-compress';
 import postRouter from './src/api/routers/index';
 import staticCache from 'koa-static-cache';
-import register from 'babel-register';
 import react from 'koa-react-view';
 import path from 'path';
 
