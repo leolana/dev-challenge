@@ -5,7 +5,8 @@
           "node": "current"
         }
       }],
-      "react"
+      "react",
+      "stage-1"
   ],
   "env": {
     "test": {

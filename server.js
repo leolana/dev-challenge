@@ -32,7 +32,7 @@ server.use(staticCache(assetspath));
 
 server.use(function* () {
   this.render('index', {
-    title: 'List',
+    title: 'marketing-card',
     list: [
       'hello koa',
       'hello react',
