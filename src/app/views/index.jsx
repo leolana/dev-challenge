@@ -1,6 +1,7 @@
 import escapeHtml from 'escape-html';
 import Layout from './layout';
 import AppBarExampleIconButton from './AppBarExampleIconButton';
+import ListExampleMessages from './ListExampleMessages';
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import baseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
@@ -23,6 +24,7 @@ const index = React.createClass({
       <Layout title={this.props.title}>
         <div id="content">
           <AppBarExampleIconButton />
+          <ListExampleMessages />>
         </div>
       </Layout>
     );
