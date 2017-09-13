@@ -24,7 +24,7 @@ const index = React.createClass({
       <Layout title={this.props.title}>
         <div id="content">
           <AppBarExampleIconButton />
-          <ListExampleMessages />>
+          <ListExampleMessages />
         </div>
       </Layout>
     );
