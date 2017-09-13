@@ -1,5 +1,6 @@
 import Router from 'koa-router';
 import Twitter from 'twitter';
+import twitterStream from '../midlewares/twitterStreamMidleware';
 
 const postRouter = new Router();
 
@@ -23,7 +24,7 @@ const searchTwitter = term => new Promise((resolve, reject) => {
 postRouter.get('/:term', async (ctx) => {
   const [tweets] = await Promise.all([searchTwitter(ctx.params.term)]);
 
-  ctx.body = tweets;
+  ctx.body = tweets.statuses.map(twitterStream);
 });
 
 module.exports = postRouter;
