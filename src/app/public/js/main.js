@@ -1,16 +1,12 @@
-var Content = require('./components/content');
-var unescapeHtml = require('unescape-html');
-var React = require('react');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Content from './components/Content.jsx';
+import unescapeHtml from 'unescape-html';
 
-function initApp() {
-  var container = document.getElementById('content');
-  var list = unescapeHtml(window.__list__);
-  list = JSON.parse(list);
-  // reuse server side render result
-  React.render(
-    <Content list={list}/>,
-    container
-  );
-}
+const container = document.getElementById('content');
 
-initApp();
+// reuse server side render result
+ReactDOM.render(
+  <Content />,
+  container,
+);

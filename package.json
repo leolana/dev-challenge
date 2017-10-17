@@ -23,8 +23,6 @@
   },
   "homepage": "https://github.com/leolana/dev-challenge#readme",
   "dependencies": {
-    "babel-loader": "^7.1.2",
-    "babel-preset-react": "^6.24.1",
     "koa": "^2.3.0",
     "koa-body": "^2.3.0",
     "koa-compress": "^2.0.0",
@@ -37,13 +35,17 @@
     "material-ui": "^0.19.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "twitter": "^1.7.1"
+    "twitter": "^1.7.1",
+    "unescape-html": "^1.1.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
     "babel-plugin-istanbul": "^4.1.4",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
     "babel-register": "^6.26.0",
     "chai": "^4.1.2",
@@ -54,6 +56,7 @@
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.3.0",
+    "koa-webpack": "^1.0.0",
     "mocha": "^3.5.0",
     "nyc": "^11.2.1",
     "webpack": "^3.5.6"

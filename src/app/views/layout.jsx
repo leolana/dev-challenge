@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Layout = React.createClass({
@@ -11,7 +10,7 @@ const Layout = React.createClass({
       <html>
         <head>
           <title>{this.props.title}</title>
-          <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet"/>
+          <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" />
           <link rel="stylesheet" href="/css/main.css" />
         </head>
         <body>
